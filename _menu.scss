@@ -1,40 +1,54 @@
-
-
-body {
-    width: 100vw;
-}
-
-h1 {
-    margin-left: 10%;
-}
+// * {
+//   border: 1px solid red;
+// }
 
 section {
-    width: 80%;
-    margin-left: 10%;
-    display: flex;
-    flex-wrap: wrap;
-
-    h2 {
-        margin-top: 0px;
-    }
-}
-
-.menu-section {
-    width: 45%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
+  width: 80%;
+  @include flex(column, space-between, start);
+  .top-section {
+    @include flex(row, space-around, start);
+    width: 100%;
+    flex: 1;
+  }
+  .bottom-section {
+    @include flex(row, space-around, start);
+    width: 100%;
+    flex: 1;
+  }
 }
 
 .item {
-    display: flex;
-    justify-content: space-between;
+  @include flex(row, space-between, center);
+  padding: 0.5rem;
 }
 
 img {
-    width: 80%;
-    height: 650px;
-    margin-left: 10%;
+  width: 80%;
+  height: auto;
+  margin-bottom: -1rem;
+  z-index: 1;
+  background-size: cover;
 }
 
+h1 {
+  padding: 2rem;
+}
+
+h3 {
+  padding: 2rem;
+}
+
+.right-menu,
+.left-menu {
+  width: 30%;
+}
+
+.menu-section {
+  padding: 1rem 0rem;
+}
+
+.bottom-section {
+  .menu-section {
+    width: 30%;
+  }
+}
