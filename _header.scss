@@ -3,18 +3,34 @@ header {
   padding: 2rem 0rem;
   @include flex(row, center, center);
   background-color: #e8e8e8;
+
   section {
     @include flex(row, space-between, center);
-    width: 80%;
+    width: 100%;
     height: fit-content;
+    padding-right: 10%; 
+
     img {
       height: 10rem;
       width: 10rem;
+      margin-left: 0px;
     }
     ul {
       list-style-type: none;
       @include flex(row, space-around, center);
       gap: 3rem;
+
+      a {
+        text-decoration: none;
+        color: #737373;
+        font-size: 20px;
+      }
+
+      a:hover {
+
+        color: #383838
+      }
+
     }
   }
 }

@@ -1,6 +1,7 @@
 
 body {
 width: 100vw;
+line-height: 1.5;
 }
 
 .coffee {
@@ -12,6 +13,13 @@ width: 100vw;
 
     h1 {
         margin-left: 0%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    p {
+        margin-bottom: 20px;
     }
 }
 
@@ -24,11 +32,11 @@ width: 100vw;
 
 .coffee-selection-item {
     width: 45%;
-    height: 500px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     background-color: #E8E8E8;
 
     h2 {
@@ -42,14 +50,24 @@ width: 100vw;
 
     img {
         width: 100%;
+        height: min-content;
         margin-left: 0;
     }
 
     p {
         background-color: #E8E8E8;
         margin-bottom: 0;
-        height: 150px;
+        height: 200px;
         padding: 2%;
+        line-height: 1.5;
     }  
+
 }
 
+@media screen and (max-width: 1173px){
+    .coffee-selection-item {
+        width: 70%;
+        margin-bottom: 50px;
+        margin-left: 15%;
+    }
+}
