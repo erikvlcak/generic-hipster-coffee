@@ -10,18 +10,50 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
 }
-body .home-title {
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+body main .home-title {
+  padding: 1rem 0rem;
+  width: 80%;
   gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
 }
-body .home-title img {
-  height: 400px;
+body main .home-title img {
+  width: 100%;
+  height: auto;
   background-size: cover;
+}
+body main .home-info {
+  width: 80%;
+  padding: 1rem 1rem 1rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+body main .home-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  gap: 0.5rem;
+  margin-right: 5rem;
+}
+body main .home-map {
+  width: 80%;
+  height: 30rem;
+  flex: row, center, center;
 }
 
 body {
