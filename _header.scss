@@ -9,17 +9,28 @@ header {
     width: 100%;
     height: fit-content;
     padding-right: 10%;
+    @media (width < 1028px) {
+      @include flex(row, center, center);
+      padding-right: 0%;
+    }
 
     img {
       height: 10rem;
       width: 10rem;
-      margin-left: 0px;
+      @media (width < 1028px) {
+        height: 20%;
+        width: 20%;
+        display: none;
+      }
     }
     ul {
       list-style-type: none;
       @include flex(row, space-around, center);
       gap: 3rem;
-
+      @media (width < 1028px) {
+        @include flex(column, space-around, center);
+        gap: 1rem;
+      }
       a {
         text-decoration: none;
         color: #737373;

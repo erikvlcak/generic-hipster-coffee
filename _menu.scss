@@ -9,17 +9,27 @@ section {
     @include flex(row, space-around, start);
     width: 100%;
     flex: 1;
+    @media (width < 1028px) {
+      @include flex(column, space-around, center);
+    }
   }
   .bottom-section {
     @include flex(row, space-around, start);
     width: 100%;
     flex: 1;
+    @media (width < 1028px) {
+      @include flex(column, space-around, center);
+    }
   }
+}
+
+.item-specialities {
+  margin-top: 1rem;
 }
 
 .item {
   @include flex(row, space-between, center);
-  padding: 0.5rem;
+  padding: 0.5rem 0rem;
 }
 
 img {
@@ -36,11 +46,16 @@ h1 {
 
 h3 {
   padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right-menu,
 .left-menu {
   width: 30%;
+  @media (width < 1028px) {
+    width: 100%;
+  }
 }
 
 .menu-section {
@@ -50,5 +65,8 @@ h3 {
 .bottom-section {
   .menu-section {
     width: 30%;
+    @media (width < 1028px) {
+      width: 100%;
+    }
   }
 }
