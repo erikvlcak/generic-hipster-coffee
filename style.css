@@ -1,6 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid red;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+body .home-title {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+body .home-title img {
+  height: 400px;
+  background-size: cover;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  border: 1px solid red;
 }

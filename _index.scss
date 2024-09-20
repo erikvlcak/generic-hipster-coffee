@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid red;
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+body {
+  @include flex(column, space-around, center);
+  height: 100vh;
+  .home-title {
+    gap: 1rem;
+    @include flex(column, space-evenly, start);
+    img {
+      height: 400px;
+      background-size: cover;
+    }
+  }
+}
