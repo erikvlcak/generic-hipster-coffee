@@ -1,0 +1,19 @@
+header {
+  width: 100%;
+  padding: 2rem 0rem;
+  @include flex(row, center, center);
+  section {
+    @include flex(row, space-between, center);
+    width: 80%;
+    height: fit-content;
+    img {
+      height: 10rem;
+      width: 10rem;
+    }
+    ul {
+      list-style-type: none;
+      @include flex(row, space-around, center);
+      gap: 3rem;
+    }
+  }
+}

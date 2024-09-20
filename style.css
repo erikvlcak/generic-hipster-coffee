@@ -56,8 +56,31 @@ body main .home-map {
   flex: row, center, center;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+header {
+  width: 100%;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: fit-content;
+}
+header section img {
+  height: 10rem;
+  width: 10rem;
+}
+header section ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
 }
