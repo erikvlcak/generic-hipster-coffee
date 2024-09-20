@@ -118,6 +118,7 @@ footer .footer-text .footer-text-info {
   align-items: center;
   gap: 1rem;
 }
+
 body {
   width: 100vw;
 }
@@ -138,7 +139,6 @@ section h2 {
 
 .menu-section {
   width: 45%;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -204,4 +204,8 @@ body {
   margin-bottom: 0;
   height: 150px;
   padding: 2%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
