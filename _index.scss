@@ -12,7 +12,21 @@ body {
     @include flex(column, space-around, center);
     width: 100%;
     flex: 1;
+
+    h1 {
+      margin-left: 0%;
+    }
+
+    .home-hours {
+      div {
+        width: 100%;
+      }
+    }
     .home-title {
+
+      div {
+        width: 100%;
+      }
       padding: 1rem 0rem;
       width: 80%;
       gap: 1rem;
@@ -21,6 +35,7 @@ body {
         width: 100%;
         height: auto;
         background-size: cover;
+        margin-left: 0%;
       }
     }
     .home-info {
@@ -32,6 +47,18 @@ body {
         @include flex(column, space-around, start);
         gap: 0.5rem;
         margin-right: 5rem;
+      }
+    }
+
+    .home-address {
+      div {
+        width: 100%;
+      }
+    }
+
+    .home-book {
+      div {
+        width: 100%;
       }
     }
     .home-map {

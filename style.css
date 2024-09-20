@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  border: 1px solid red;
   list-style-type: none;
 }
 
@@ -20,6 +19,12 @@ body main {
   width: 100%;
   flex: 1;
 }
+body main h1 {
+  margin-left: 0%;
+}
+body main .home-hours div {
+  width: 100%;
+}
 body main .home-title {
   padding: 1rem 0rem;
   width: 80%;
@@ -29,10 +34,14 @@ body main .home-title {
   justify-content: space-evenly;
   align-items: start;
 }
+body main .home-title div {
+  width: 100%;
+}
 body main .home-title img {
   width: 100%;
   height: auto;
   background-size: cover;
+  margin-left: 0%;
 }
 body main .home-info {
   width: 80%;
@@ -50,6 +59,12 @@ body main .home-info div {
   align-items: start;
   gap: 0.5rem;
   margin-right: 5rem;
+}
+body main .home-address div {
+  width: 100%;
+}
+body main .home-book div {
+  width: 100%;
 }
 body main .home-map {
   width: 80%;
@@ -72,6 +87,7 @@ header section {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  height: -moz-fit-content;
   height: fit-content;
 }
 header section img {
@@ -118,6 +134,7 @@ footer .footer-text .footer-text-info {
   align-items: center;
   gap: 1rem;
 }
+
 body {
   width: 100vw;
 }
