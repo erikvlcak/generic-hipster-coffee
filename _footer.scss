@@ -1,6 +1,7 @@
 footer {
   width: 100%;
   height: 20rem;
+  background-color: rgb(88, 103, 176);
   @include flex(row, center, center);
   .footer-text {
     width: 50%;
