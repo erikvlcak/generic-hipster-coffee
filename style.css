@@ -118,3 +118,90 @@ footer .footer-text .footer-text-info {
   align-items: center;
   gap: 1rem;
 }
+body {
+  width: 100vw;
+}
+
+h1 {
+  margin-left: 10%;
+}
+
+section {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section h2 {
+  margin-top: 0px;
+}
+
+.menu-section {
+  width: 45%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 80%;
+  height: 650px;
+  margin-left: 10%;
+}
+
+body {
+  width: 100vw;
+}
+
+.coffee {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.coffee h1 {
+  margin-left: 0%;
+}
+
+.coffee-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-between;
+}
+
+.coffee-selection-item {
+  width: 45%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20%;
+  background-color: #E8E8E8;
+}
+.coffee-selection-item h2 {
+  background-color: #E8E8E8;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid grey;
+}
+.coffee-selection-item img {
+  width: 100%;
+  margin-left: 0;
+}
+.coffee-selection-item p {
+  background-color: #E8E8E8;
+  margin-bottom: 0;
+  height: 150px;
+  padding: 2%;
+}/*# sourceMappingURL=style.css.map */
